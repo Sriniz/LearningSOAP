@@ -24,7 +24,7 @@ import com.sforce.soap.enterprise.sobject.SObject;
 import com.sforce.ws.ConnectorConfig;
 import com.sforce.ws.ConnectionException;
 
-public class QuickstartApiSample {
+public class enterpriseSample {
 	private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 	EnterpriseConnection connection;
 	String authEndPoint = "https://login.salesforce.com/services/Soap/u/37.0";
@@ -34,7 +34,7 @@ public class QuickstartApiSample {
 			System.out.println("Usage: com.example.samples." + "QuickstartApiSamples <AuthEndPoint>");
 			System.exit(-1);
 		}
-		QuickstartApiSample sample = new QuickstartApiSample(args[0]);
+		enterpriseSample sample = new enterpriseSample(args[0]);
 		sample.run();
 	}
 
@@ -58,7 +58,7 @@ public class QuickstartApiSample {
 	}
 
 	// Constructor
-	public QuickstartApiSample(String authEndPoint) {
+	public enterpriseSample(String authEndPoint) {
 		this.authEndPoint = authEndPoint;
 	}
 
