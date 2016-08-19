@@ -14,7 +14,7 @@ import java.util.*;
 
 import javax.xml.namespace.QName;
 
-public class PartnerSamples {
+public class partnerSamples {
 
 	static PartnerConnection partnerConnection = null;
 	String authEndPoint = "https://login.salesforce.com/services/Soap/u/37.0";
@@ -22,7 +22,7 @@ public class PartnerSamples {
 
 	public static void main(String[] args) {
 
-		PartnerSamples samples = new PartnerSamples();
+		partnerSamples samples = new partnerSamples();
 
 		if (samples.login()) {
 			String Id;
