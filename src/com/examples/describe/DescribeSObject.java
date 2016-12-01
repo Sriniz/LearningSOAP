@@ -35,6 +35,9 @@ public class DescribeSObject {
 				System.out.println("sObject name: " + describeSObjectResult.getName());
 				if (describeSObjectResult.isCreateable())
 					System.out.println("Createable");
+				if (describeSObjectResult.isCustom())
+					System.out.println("Yes...im a custom object");				
+				System.out.println("Object Label:"+describeSObjectResult.getLabelPlural());
 				// Get the fields
 				Field[] fields = describeSObjectResult.getFields();
 				System.out.println("Has " + fields.length + " fields");
